@@ -1,4 +1,7 @@
 
+//Here, FlyingCar class implements two interface Vehicle and Aircraft. 
+//And Override their method start() and takeOff()
+
 
 interface Vehicle{
     void start();
