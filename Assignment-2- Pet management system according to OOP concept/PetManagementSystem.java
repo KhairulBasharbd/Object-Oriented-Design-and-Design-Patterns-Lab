@@ -18,7 +18,7 @@ class PetManagementSystem implements PetManager {
     public void listPets() {
         System.out.println("List of Pets:");
         for (Pet pet : pets) {
-            System.out.println(pet.getName() + " (" + pet.getClass().getSimpleName() + ") - Age: " + pet.getAge());
+            System.out.println(pet.getName() + " - Age: " + pet.getAge());
         }
     }
 }

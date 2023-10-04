@@ -2,20 +2,25 @@
 
 public class Main {
     public static void main(String[] args) {
-       // PetManagementSystem petSystem = new PetManagementSystem();
+       
        PetManagementSystem petSystem = new PetManagementSystem();
 
-        // Create some pets
-        Pet dog = new Dog("Buddy", 3);
-        Pet cat = new Cat("Whiskers", 2);
+        // Creating some pets
+        Pet dog1 = new Dog("Buddy", 3);
+        Pet cat = new Cat("Luna", 2);
+        Pet dog2 = new Dog("Max", 4);
 
-        // Add pets to the system
-        petSystem.addPet(dog);
+        // Adding pets to the system
+        petSystem.addPet(dog1);
         petSystem.addPet(cat);
-
+        petSystem.addPet(dog2);
         // List and make sounds of pets
         petSystem.listPets();
-        dog.makeSound();
+
+        System.out.println("\n----------------\n");
+
+        dog1.makeSound();
         cat.makeSound();
+        dog2.makeSound();
     }
 }
