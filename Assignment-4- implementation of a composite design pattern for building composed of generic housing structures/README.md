@@ -2,7 +2,7 @@
 
 ## Component Interface
 
-`HousingStructure` is the component interface that declares the `display` method, which is implemented by both leaf and composite classes.
+`HousingStructure` is the component interface that declares the `display` method, which is implemented by both `leaf` and `composite` classes.
 
 ## Leaf Class
 `Room` is a leaf class representing individual rooms. It has a `name` and implements the `display` method to print room information.
