@@ -1,5 +1,6 @@
 # Pet Management System
 
+## Description
 This is a Java program that demonstrates a simple pet management system. It includes the following classes:
 
 - `Pet`: An abstract class representing a pet, with properties like name and age, and an abstract method to make a sound.
@@ -11,3 +12,6 @@ This is a Java program that demonstrates a simple pet management system. It incl
 
 To run the program, compile all the Java files and execute the `Main` class, which serves as the entry point:
 
+## UML Diagram
+
+![Link Name](Pet_management_system_UML_diagram.png) 
