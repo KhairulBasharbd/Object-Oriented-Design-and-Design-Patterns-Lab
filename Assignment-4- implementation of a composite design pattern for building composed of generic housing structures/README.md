@@ -9,7 +9,7 @@
 
 ## Composite Classes
 `Floor` and `Building` are composite classes representing parts of the building.
-Both `Floor` and `Building` can contain a list of 'HousingStructure' objects.
+Both `Floor` and `Building` can contain a list of `HousingStructure` objects.
 They implement the `display` method to display their own information along with the information of their contained structures recursively.
 
 
