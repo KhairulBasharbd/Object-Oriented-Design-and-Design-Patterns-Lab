@@ -85,7 +85,7 @@ public class CompositePatternDemo {
         building.addStructure(floor1);
         building.addStructure(floor2);
 
-        // Display the building structure
+    
         building.display();
     }
 }
