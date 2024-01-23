@@ -1,68 +1,4 @@
-import java.util.ArrayList;
-import java.util.List;
 
-// Component interface
-interface HousingStructure {
-    void display();
-}
-
-// Leaf class
-class Room implements HousingStructure {
-    private String name;
-
-    public Room(String name) {
-        this.name = name;
-    }
-
-    @Override
-    public void display() {
-        System.out.println("Room: " + name);
-    }
-}
-
-// Composite class
-class Floor implements HousingStructure {
-    private String name;
-    private List<HousingStructure> structures = new ArrayList<>();
-
-    public Floor(String name) {
-        this.name = name;
-    }
-
-    public void addStructure(HousingStructure structure) {
-        structures.add(structure);
-    }
-
-    @Override
-    public void display() {
-        System.out.println("Floor: " + name);
-        for (HousingStructure structure : structures) {
-            structure.display();
-        }
-    }
-}
-
-// Composite class
-class Building implements HousingStructure {
-    private String name;
-    private List<HousingStructure> structures = new ArrayList<>();
-
-    public Building(String name) {
-        this.name = name;
-    }
-
-    public void addStructure(HousingStructure structure) {
-        structures.add(structure);
-    }
-
-    @Override
-    public void display() {
-        System.out.println("Building: " + name);
-        for (HousingStructure structure : structures) {
-            structure.display();
-        }
-    }
-}
 
 public class CompositePatternDemo {
     public static void main(String[] args) {
@@ -87,5 +23,7 @@ public class CompositePatternDemo {
 
     
         building.display();
+
+        //floor2.display();
     }
 }
