@@ -6,12 +6,12 @@ interface EmployeeDuty{
     void work(); 
 }
 
-class Employee implements EmployeeDuty,EmployeeInfo{
+class Employee1 implements EmployeeDuty,EmployeeInfo{
     private String name;
     private int id;
 
 
-    Employee(String name, int id){
+    Employee1(String name, int id){
         this.name = name;
         this.id = id;
 
@@ -32,10 +32,9 @@ class Employee implements EmployeeDuty,EmployeeInfo{
 
 public class EmployeeDemo {
     public static void main(String [] args){
-        Employee emp1 = new Employee("KB",143);
+        Employee1 emp1 = new Employee1("KB",143);
 
         emp1.displayInfo();
-        emp1.work();
 
 
     }
